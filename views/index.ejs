@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+
+<body>
+    <h1>
+        <%= title %>
+    </h1>
+
+    <h1>Formulario de la base de datos COCHES</h1>
+
+
+    <!-- localhost:3000/coches/deLujo == action="" -->
+    <form action="/coches/deLujo" method="post">
+        <div class="container_form">
+            <label for="">name</label>
+            <input type="text" name="name" placeholder="Nombre del usurario" />
+        </div>
+        <div class="container_form">
+            <label for="">last name</label>
+            <input type="text" name="last_name" placeholder="Apellido del usurario" />
+        </div>
+        <div class="container_form">
+            <label for="">marca</label>
+            <input type="text" name="marca" placeholder="Marca" />
+        </div>
+        <div class="container_form">
+            <label for="">modelo</label>
+            <input type="text" name="modelo" placeholder="Modelo" />
+        </div>
+        <div class="container_form">
+            <label for="">color</label>
+            <input type="text" name="color" placeholder="Color" />
+        </div>
+
+        <button type="submit">Clik</button>
+    </form>
+</body>
+
+</html>
